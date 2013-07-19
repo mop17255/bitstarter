@@ -76,7 +76,7 @@ if(require.main==module){
 		.option('-u, --url <url_file>', 'Url to get')
 		.parse(process.argv);
 	if(program.url){
-		console.log("Reading from Url...\n");
+		console.log("Reading from url: %s\n", program.url);
 		handleUrl(program.url, program.checks);		
 	} else if (program.file) {
 		console.log("Reading from file...\n");
